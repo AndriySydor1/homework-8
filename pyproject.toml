@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "python-web-hw8"
+version = "0.1.0"
+description = ""
+authors = ["Andriy <AndriySydor91@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mongoengine = "^0.24.1"
+pika = "^1.2.0"
+faker = "^13.0.0"
+redis = "^4.2.2"
+pymongo = "^4.8.0"
+
+[tool.poetry.scripts]
+load_authors = "scripts.load_authors:main"
+load_quotes = "scripts.load_quotes:main"
+search_quotes = "scripts.search_quotes:main"
+producer = "scripts.producer:main"
+consumer_email = "scripts.consumer_email:main"
+consumer_sms = "scripts.consumer_sms:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

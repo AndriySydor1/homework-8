@@ -1,0 +1,109 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Poetry environment
+.env
+.venv/
+poetry.lock
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environments
+.env
+.env.*
+.venv
+venv/
+ENV/
+env.bak/
+env/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Docker
+**/Dockerfile
+**/docker-compose.yml
+**/docker-compose.*.yml
+**/docker-compose.override.yml
+
+# RabbitMQ
+rabbitmq/
+
+# MongoDB
+/data/db/
+mongod.lock
+
+# Python-specific extensions
+*.pyo
+*.pyd
+*.py[cod]
+
+# Ignore node_modules
+node_modules/
+
+# Ignore local configuration
+*.local
+*.env
+
+# Ignore virtual environment directories
+**/venv/
+**/venv*/
+**/ENV/
+**/env/
+**/env*/
+
+# Ignore compiled files
+*.so
+*.dll
+*.dylib
