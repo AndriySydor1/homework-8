@@ -112,3 +112,14 @@ node_modules/
 *.so
 *.dll
 *.dylib
+
+/poetry.lock
+/venv/
+
+*.tmp
+*.bak
+*.swp
+
+/static/
+/media/
+/staticfiles/
