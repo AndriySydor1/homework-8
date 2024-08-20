@@ -4,6 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Andriy <AndriySydor91@gmail.com>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -12,6 +13,7 @@ pika = "^1.2.0"
 faker = "^13.0.0"
 redis = "^4.2.2"
 pymongo = "^4.8.0"
+scrapy = "^2.11.2"
 
 [tool.poetry.scripts]
 load_authors = "scripts.load_authors:main"

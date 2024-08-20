@@ -31,6 +31,11 @@ MANIFEST
 *.log
 *.sqlite3
 
+# Django specific
+/media/
+/staticfiles/
+/static/
+
 # Unit test / coverage reports
 htmlcov/
 .tox/
@@ -82,7 +87,7 @@ rabbitmq/
 
 # MongoDB
 /data/db/
-mongod.lock
+/mongod.lock
 
 # Python-specific extensions
 *.pyo
