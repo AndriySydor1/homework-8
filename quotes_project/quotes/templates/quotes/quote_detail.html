@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% block title %}Quote Details{% endblock %} {% block
+content %}
+<h2>Quote</h2>
+<blockquote>
+  "{{ quote.text }}"
+  <small>— {{ quote.author.fullname }}</small>
+</blockquote>
+<p>Tags: {{ quote.tags|join:", " }}</p>
+{% endblock %}

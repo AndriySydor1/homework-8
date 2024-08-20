@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block title %}Top Tags{% endblock %} {% block
+content %}
+<h2>Top Ten Tags</h2>
+<ul>
+  {% for tag in top_tags %}
+  <li>
+    <a href="{% url 'quotes:tag_detail' tag.name %}">{{ tag.name }}</a> ({{
+    tag.count }} quotes)
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

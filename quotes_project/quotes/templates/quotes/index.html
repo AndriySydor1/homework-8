@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% block title %}All Quotes{% endblock %} {% block
+content %}
+<h2>Quotes</h2>
+<ul>
+  {% for quote in quotes %}
+  <li>
+    <blockquote>
+      "{{ quote.text }}"
+      <small>— {{ quote.author.fullname }}</small>
+    </blockquote>
+  </li>
+  {% endfor %}
+</ul>
+
+<div class="pagination">
+  {% if quotes.has_previous %}
+  <a href="?page={{ quotes.previous_page_number }}">Previous</a>
+  {% endif %}
+
+  <span>Page {{ quotes.number }} of {{ quotes.paginator.num_pages }}</span>
+
+  {% if quotes.has_next %}
+  <a href="?page={{ quotes.next_page_number }}">Next</a>
+  {% endif %}
+</div>
